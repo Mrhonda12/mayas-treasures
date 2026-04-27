@@ -2,13 +2,14 @@ import { CONTACT_EMAIL } from '../contact'
 import './ProductCard.css'
 
 const imageBg = {
-  "Women's Clothing": { bg: '#f5e8e6', stroke: '#c17c74' },
-  "Kids' Clothes":    { bg: '#e8f2ea', stroke: '#7d9e87' },
-  'Housewares':       { bg: '#f0ebe4', stroke: '#a08070' },
+  "Women's Clothing":    { bg: '#fde8e3', stroke: '#c9523e' },
+  "Kids / Girls Clothing": { bg: '#e4f0e8', stroke: '#5e9472' },
+  'Housewares':          { bg: '#f5ede4', stroke: '#9c7260' },
+  'Toys':                { bg: '#fef3d8', stroke: '#d4843a' },
 }
 
 function PlaceholderImage({ category }) {
-  const { bg, stroke } = imageBg[category]
+  const { bg, stroke } = imageBg[category] ?? { bg: '#f5ede4', stroke: '#9c7260' }
   return (
     <div className="card__image" style={{ background: bg }}>
       <svg

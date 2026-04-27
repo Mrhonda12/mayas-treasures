@@ -1,7 +1,7 @@
 /* ── Sold state ────────────────────────────────────── */
 
 .card--sold {
-  opacity: 0.6;
+  opacity: 0.58;
 }
 
 .card__image-wrap {
@@ -12,7 +12,7 @@
   position: absolute;
   top: 12px;
   right: 12px;
-  background: rgba(61, 40, 24, 0.72);
+  background: rgba(44, 26, 13, 0.75);
   color: #fff;
   font-size: 11px;
   font-weight: 700;
@@ -24,14 +24,14 @@
 }
 
 .card__btn--sold {
-  background: #d8d0c8;
-  color: #9e9189;
+  background: #ddd5cc;
+  color: #a08070;
   cursor: not-allowed;
 }
 
 .card__btn--sold:hover {
-  background: #d8d0c8;
-  color: #9e9189;
+  background: #ddd5cc;
+  color: #a08070;
 }
 
 /* ── Card ──────────────────────────────────────────── */
@@ -43,12 +43,13 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: box-shadow 0.2s, transform 0.2s;
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
 }
 
 .card:hover {
-  box-shadow: 0 8px 28px rgba(61, 40, 24, 0.1);
+  box-shadow: 0 10px 32px rgba(44, 26, 13, 0.14);
   transform: translateY(-3px);
+  border-color: #d4b8ad;
 }
 
 .card__image {
@@ -97,9 +98,9 @@
   border-radius: 12px;
 }
 
-.card__condition--new      { background: #e8f2ea; color: #3d7a56; }
-.card__condition--like-new { background: #f5e8e6; color: #b36860; }
-.card__condition--used     { background: #f0ebe4; color: #8c7b70; }
+.card__condition--new      { background: #e4f2e8; color: #2f7048; }
+.card__condition--like-new { background: #fde8e3; color: #c9523e; }
+.card__condition--used     { background: #f4ede6; color: #8a6a58; }
 
 .card__price {
   font-family: var(--font-serif);

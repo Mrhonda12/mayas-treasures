@@ -1,11 +1,11 @@
 .banner {
-  background: var(--rose);
+  background: var(--amber);
   color: var(--white);
   text-align: center;
-  padding: 9px 16px;
+  padding: 10px 16px;
   font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.3px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
 }
 
 .banner__text {

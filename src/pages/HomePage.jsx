@@ -11,7 +11,7 @@ const categories = [
       "Tops, dresses, jeans, jackets, and more — hand-selected and ready for a new home.",
   },
   {
-    title: "Kids' Clothes",
+    title: "Kids / Girls Clothing",
     description:
       "Kids grow fast. We make it easy to keep up with comfortable, practical finds at prices that make sense.",
   },
@@ -19,6 +19,11 @@ const categories = [
     title: 'Housewares',
     description:
       'Mugs, bowls, linens, décor, and more — little things that make a house feel like home.',
+  },
+  {
+    title: 'Toys',
+    description:
+      'Gently used toys for all ages — a fun and affordable way to keep the kids entertained.',
   },
 ]
 
@@ -43,7 +48,6 @@ const steps = [
 ]
 
 const policies = [
-  'We do not sell toys.',
   'All items are thrifted and may show signs of normal wear — condition is noted on each listing.',
   'Holds are first-come, first-served. We cannot reserve an item until we hear from you.',
   'All sales are final unless otherwise stated.',
@@ -52,15 +56,15 @@ const policies = [
 const faqs = [
   {
     q: 'What do you sell?',
-    a: "Women's clothing, kids' clothes, and housewares — all gently used and hand-picked.",
+    a: "Women's clothing, kids' and girls' clothing, housewares, and toys — all gently used and hand-picked.",
   },
   {
-    q: 'Do you sell toys?',
-    a: "No, we don't sell toys. Just clothing and housewares.",
+    q: 'How often is inventory updated?',
+    a: "New items are added regularly as we get new stock in. Check back often — good finds go fast!",
   },
   {
     q: 'How do I buy an item?',
-    a: 'Message us with the item name — by email or Instagram DM. We\'ll confirm it\'s still available and take it from there.',
+    a: "Message us with the item name — by email or Instagram DM. We'll confirm it's still available and take it from there.",
   },
   {
     q: 'Are items final sale?',
@@ -125,11 +129,11 @@ export default function HomePage() {
           <div className="about__intro">
             <h2 className="about__heading">About Us</h2>
             <p className="about__text">
-              We're a small, family-run shop offering gently used clothing and housewares
-              at honest prices. Every item is hand-selected — we only list things we'd be
-              happy to bring home ourselves. Whether you're refreshing your wardrobe,
-              finding great deals for the kids, or looking for something cozy for the
-              home, we're glad you're here.
+              We're a small, family-run shop offering gently used clothing, housewares,
+              and toys at honest prices. Every item is hand-selected — we only list things
+              we'd be happy to bring home ourselves. Whether you're refreshing your
+              wardrobe, finding great deals for the kids, or looking for something cozy
+              for the home, we're glad you're here.
             </p>
           </div>
           <div className="about__grid">

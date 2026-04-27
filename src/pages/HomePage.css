@@ -1,7 +1,7 @@
 /* ── Hero ──────────────────────────────────────────── */
 
 .hero {
-  background: var(--brown-dark);
+  background: linear-gradient(150deg, var(--brown-dark) 0%, #3e2014 100%);
   min-height: 88vh;
   display: flex;
   align-items: center;
@@ -35,7 +35,7 @@
 
 .hero__tagline {
   font-size: 18px;
-  color: #c4b5ab;
+  color: #cdb8a8;
   margin-bottom: 40px;
   line-height: 1.65;
 }
@@ -81,7 +81,7 @@
 }
 
 .about__container {
-  max-width: 980px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -108,8 +108,8 @@
 
 .about__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .about__card {
@@ -141,6 +141,13 @@
   line-height: 1.75;
 }
 
+@media (max-width: 860px) {
+  .about__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
 @media (max-width: 720px) {
   .about {
     padding: 64px 24px;
@@ -148,12 +155,14 @@
   .about__heading {
     font-size: 32px;
   }
-  .about__grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
   .about__intro {
     margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about__grid {
+    grid-template-columns: 1fr;
   }
 }
 

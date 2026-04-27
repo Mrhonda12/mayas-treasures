@@ -3,7 +3,7 @@ import { items } from '../data/items'
 import ProductCard from '../components/ProductCard'
 import './InventoryPage.css'
 
-const FILTERS = ["All", "Women's Clothing", "Kids' Clothes", "Housewares"]
+const FILTERS = ["All", "Women's Clothing", "Kids / Girls Clothing", "Housewares", "Toys"]
 
 export default function InventoryPage() {
   const [active, setActive] = useState('All')
@@ -15,7 +15,7 @@ export default function InventoryPage() {
       <div className="inventory__header">
         <h1 className="inventory__title">Our Inventory</h1>
         <p className="inventory__subtitle">
-          Browse our current selection of women's clothing, kids' clothes, and housewares.
+          Browse our current selection of women's clothing, kids' and girls' clothing, housewares, and toys.
         </p>
       </div>
 
