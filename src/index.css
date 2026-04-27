@@ -1,0 +1,52 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --cream: #fdf9f6;
+  --brown-dark: #3d2818;
+  --brown-mid: #6b4e3a;
+  --brown-light: #a08070;
+  --rose: #c17c74;
+  --rose-dark: #a96860;
+  --rose-light: #f5e8e6;
+  --sage: #7d9e87;
+  --border: #e8ddd6;
+  --white: #ffffff;
+
+  --font-sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: Georgia, 'Times New Roman', serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--cream);
+  color: var(--brown-mid);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  color: var(--brown-dark);
+}
+
+p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+}

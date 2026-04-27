@@ -1,0 +1,140 @@
+/* ── Sold state ────────────────────────────────────── */
+
+.card--sold {
+  opacity: 0.6;
+}
+
+.card__image-wrap {
+  position: relative;
+}
+
+.card__sold-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(61, 40, 24, 0.72);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.card__btn--sold {
+  background: #d8d0c8;
+  color: #9e9189;
+  cursor: not-allowed;
+}
+
+.card__btn--sold:hover {
+  background: #d8d0c8;
+  color: #9e9189;
+}
+
+/* ── Card ──────────────────────────────────────────── */
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 28px rgba(61, 40, 24, 0.1);
+  transform: translateY(-3px);
+}
+
+.card__image {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.card__body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card__category {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--brown-light);
+  margin-bottom: 6px;
+}
+
+.card__name {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--brown-dark);
+  line-height: 1.3;
+  margin-bottom: 14px;
+}
+
+.card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__condition {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.card__condition--new      { background: #e8f2ea; color: #3d7a56; }
+.card__condition--like-new { background: #f5e8e6; color: #b36860; }
+.card__condition--used     { background: #f0ebe4; color: #8c7b70; }
+
+.card__price {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--brown-dark);
+}
+
+.card__btn {
+  display: block;
+  margin-top: 16px;
+  width: 100%;
+  padding: 11px 16px;
+  background: var(--brown-dark);
+  color: var(--cream);
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: background 0.2s;
+}
+
+.card__btn:hover {
+  background: var(--rose);
+  color: var(--cream);
+}
+
+@media (max-width: 520px) {
+  .card__image {
+    height: 180px;
+  }
+}
