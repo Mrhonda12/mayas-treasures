@@ -3,18 +3,27 @@
 }
 
 :root {
-  --cream:       #fef7ef;
-  --brown-dark:  #2c1a0d;
-  --brown-mid:   #6a3f2d;
-  --brown-light: #9c7260;
-  --rose:        #c9523e;
-  --rose-dark:   #a83d2a;
-  --rose-light:  #fde8e3;
-  --amber:       #d4843a;
-  --amber-light: #fef3d8;
-  --sage:        #5e9472;
-  --border:      #e4cfc3;
+  /* backgrounds */
+  --cream:       #fff4e8;
   --white:       #ffffff;
+
+  /* text */
+  --brown-dark:  #1e0f06;
+  --brown-mid:   #5c3320;
+  --brown-light: #8a6250;
+
+  /* primary accent — warm terracotta */
+  --rose:        #c9451f;
+  --rose-dark:   #a83310;
+  --rose-light:  #fce0d8;
+
+  /* secondary accent — golden amber */
+  --amber:       #e08928;
+  --amber-light: #fef2d4;
+
+  /* supporting */
+  --sage:        #4a9466;
+  --border:      #e8d4c8;
 
   --font-sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --font-serif: Georgia, 'Times New Roman', serif;

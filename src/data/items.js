@@ -10,4 +10,5 @@ export const items = [
   { id: 9,  name: "Plaid Throw Blanket",      category: "Housewares",          condition: "New",      price: 20, featured: false, sold: false },
   { id: 10, name: "Wooden Block Set",         category: "Toys",                condition: "Like New", price: 12, featured: false, sold: false },
   { id: 11, name: "Stacking Rings",           category: "Toys",                condition: "New",      price:  8, featured: false, sold: false },
+  { id: 12, name: "Puzzle Set (48 pcs)",      category: "Toys",                condition: "Like New", price: 10, featured: false, sold: false },
 ]
